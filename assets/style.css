@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ebeff3;
+}
+
+.container {
+  padding: 3rem;
+  text-align: center;
+  width: 600px;
+  height: 30rem;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  box-shadow: 5px 5px 10px 5px rgb(136, 133, 133);
+}
+
+.container h1 {
+  font-size: 40px;
+  font-family: "Helvetica Neue";
+  color: darkgreen;
+}
+.container .address-container {
+  position: relative;
+}
+.container .input {
+  padding: 1rem 2rem;
+  width: 100%;
+  border: 1px solid gray;
+  outline: none;
+}
+.address-list {
+  position: absolute;
+  border: 1px solid gray;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.address-list .content {
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background-color: white;
+  border-bottom: 1px solid gray;
+}
+.address-list .content:last-child {
+  border-bottom: none;
+}
+.address-list .item-hightlighted {
+  color: white;
+  background-color: blue;
+}
